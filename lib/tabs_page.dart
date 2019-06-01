@@ -1,23 +1,20 @@
 
 import 'package:flutter/material.dart';
-import 'package:firebase_analytics/observer.dart';
 
 class TabsPage extends StatefulWidget {
-  TabsPage(this.observer);
+  TabsPage();
 
-  final FirebaseAnalyticsObserver observer;
 
   static const String routeName = '/tab';
 
   @override
-  State<StatefulWidget> createState() => _TabsPageState(observer);
+  State<StatefulWidget> createState() => _TabsPageState();
 }
 
 class _TabsPageState extends State<TabsPage>
     with SingleTickerProviderStateMixin, RouteAware {
-  _TabsPageState(this.observer);
+  _TabsPageState();
 
-  final FirebaseAnalyticsObserver observer;
   TabController _controller;
   int selectedIndex = 0;
 
@@ -25,18 +22,6 @@ class _TabsPageState extends State<TabsPage>
     const Tab(text: 'LEFT'),
     const Tab(text: 'RIGHT'),
   ];
-
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    observer.subscribe(this, ModalRoute.of(context));
-  }
-
-  @override
-  void dispose() {
-    observer.unsubscribe(this);
-    super.dispose();
-  }
 
   @override
   void initState() {
@@ -50,7 +35,6 @@ class _TabsPageState extends State<TabsPage>
       setState(() {
         if (selectedIndex != _controller.index) {
           selectedIndex = _controller.index;
-          _sendCurrentTabToAnalytics();
         }
       });
     });
@@ -71,22 +55,6 @@ class _TabsPageState extends State<TabsPage>
           return Center(child: Text(tab.text));
         }).toList(),
       ),
-    );
-  }
-
-  @override
-  void didPush() {
-    _sendCurrentTabToAnalytics();
-  }
-
-  @override
-  void didPopNext() {
-    _sendCurrentTabToAnalytics();
-  }
-
-  void _sendCurrentTabToAnalytics() {
-    observer.analytics.setCurrentScreen(
-      screenName: '${TabsPage.routeName}/tab$selectedIndex',
     );
   }
 }
