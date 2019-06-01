@@ -1,18 +1,19 @@
 buildscript {
     repositories {
-        google()
+        google()   // Google's Maven Repo
         jcenter()
     }
-
+//
     dependencies {
         classpath 'com.android.tools.build:gradle:3.2.1'
-        classpath 'com.google.gms:google-services:4.2.0'  //firebase project level
+       // classpath 'com.google.gms:google-services:4.2.0'  //firebase project level newer not compatible with flutter
+        classpath 'com.google.gms:google-services:3.2.1'  // Google Services Plugin for Flutter
     }
 }
 
 allprojects {
     repositories {
-        google()
+        google()  // Google's Maven Repo
         jcenter()
     }
 }
