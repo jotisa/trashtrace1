@@ -19,6 +19,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  firebase_core: ^0.2.5  # add dependency for Firebase Core
+  firebase_database: 1.0.3 # connection to Firebase Database
 
   location: ^1.4.1   # # get and track client's position
 
