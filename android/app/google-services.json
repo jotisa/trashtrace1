@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1046390231940",
+    "firebase_url": "https://trashtrace-4b2ae.firebaseio.com",
+    "project_id": "trashtrace-4b2ae",
+    "storage_bucket": "trashtrace-4b2ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046390231940:android:f1bc72997dd75f4e",
+        "android_client_info": {
+          "package_name": "com.trashtrace.trashtrace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1046390231940-sp46eedcjjklrqg8do83fpqhpfcsncgj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6C2WymDxefIV45Ezu255T2WA0BFK5JEE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1046390231940-sp46eedcjjklrqg8do83fpqhpfcsncgj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1046390231940-5tg9auanp0497qccvc2iptbucsqift7d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.trashtrace.trashtrace"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
