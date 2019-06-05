@@ -2,6 +2,10 @@
 
 Trash Trace Locator.
 
+## Youtube Video
+
+https://www.youtube.com/embed/KfDcV5x60DQ
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
