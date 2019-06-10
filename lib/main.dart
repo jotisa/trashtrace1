@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'SignUpPage.dart';
 import 'helpers/Constants.dart';
 
-void main() => runApp(TrashTrace());
+void main() => runApp(MyApp());
 
-class TrashTrace extends StatelessWidget{
+class MyApp extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
