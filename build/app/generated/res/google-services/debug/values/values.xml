@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1046390231940-sp46eedcjjklrqg8do83fpqhpfcsncgj.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://trashtrace-4b2ae.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1046390231940</string>
+    <string name="google_api_key" translatable="false">AIzaSyA6C2WymDxefIV45Ezu255T2WA0BFK5JEE</string>
+    <string name="google_app_id" translatable="false">1:1046390231940:android:f1bc72997dd75f4e</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA6C2WymDxefIV45Ezu255T2WA0BFK5JEE</string>
+    <string name="google_storage_bucket" translatable="false">trashtrace-4b2ae.appspot.com</string>
+    <string name="project_id" translatable="false">trashtrace-4b2ae</string>
+</resources>
